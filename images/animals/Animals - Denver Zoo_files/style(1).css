@@ -1,0 +1,195 @@
+/*
+Theme Name:         denverzoo theme
+Theme URI:          http://www.1fee.com
+Description:        Project theme for denverzoo
+Version:            1.0.0
+Author:             1FEE
+Author URI:         http://www.1fee.com
+*/
+
+.dz-visit .dz-visit-row{
+  display: none;
+}
+.dz-visit .dz-visit-row.dz-visit-active{
+  display: block;
+}
+
+.tribe-events-othermonth div{
+  display: none;
+}
+
+.tribe-events-page-title-wrap-custom .nav-arrow-visible-hidden{
+  visibility: hidden;
+}
+.single-dz_animals .zoo-description-text .zoo-shrinked-col{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+.single-dz_animals .zoo-description-text .fl-col .zoo-animals-view-more{
+  display: none;
+}
+.single-dz_animals .zoo-description-text .zoo-shrinked-col .zoo-animals-view-more{
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  display: block;
+  cursor: default;
+}
+
+body.page-visit .schedule-datepicker{
+  position: absolute;
+  top: 41px;
+  display: flex;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-content: center;
+  z-index: 10;
+  left: 0;
+}
+.zoo-card .fl-callout a {
+  color: #fff;
+}
+
+.page-visit .latest-news.other-events  h2 a {
+  color: #FFF;
+}
+.page-visit .latest-news.other-events h3 a {
+  color: #FFF;
+  font-size: 2.2rem;
+}
+.page-visit .latest-news.other-events .latest-news__date {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #E3C72E;
+}
+
+.zoo-animals-view-more .view_more_text{
+  color: #007bff;
+}
+.zoo-animals-view-more .view_less_text{
+  display: none;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type="submit"].button-primary.dz-purple3 {
+  color: #fff;
+}
+.page-visit .latest-news.other-events h2 a:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  width: 5rem;
+  height: 3px;
+  transition: .3s;
+}
+
+.page-visit .latest-news.other-events h2 a:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -3px;
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-left: 1rem solid #E3C72E;
+  transition: .3s;
+}
+.page-visit .latest-news.other-events h3 a:after,.page-visit .latest-news.other-events h3 a:before{
+  content: none;
+}
+.post-type-archive-tribe_events .activities a .activities__title span{
+  border-bottom-color: #8550a0;
+}
+.post-type-archive-tribe_events .activities a:hover::before{
+  background: #8550a0;
+}
+.post-type-archive-tribe_events .activities a:hover .activities__title span,
+.post-type-archive-tribe_events .activities a.dz-blue2:hover .activities__title span{
+  border-bottom-color: #fff;
+}
+.post-type-archive-tribe_events .activities a.dz-blue2 .activities__title span{
+  border-bottom-color: #3EB0AA;
+}
+.post-type-archive-tribe_events .activities a.dz-blue2:hover::before {
+  background: #3EB0AA;
+}
+.page-visit .latest-news.other-events{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.pp_content_container .pp_hoverContainer{
+  z-index: -1;
+}
+.mc4wp-form-fields {
+    position: relative;
+}
+.sign-up .icon-email {
+    top:.75rem !important;
+    right: 2.5rem !important;
+}
+.fl-builder .inner-banner {
+  height: 76rem;
+}
+.placeholder-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+/* Media Calls */
+@media only screen and (max-width: 992px){
+  .banner .banner__right {
+      float: none;
+  }
+  .banner_text {
+    display: none;
+  }
+  .banner .banner__right {
+    text-align: center;
+  }
+  .placeholder-img {
+    display: block;
+    height: 60rem;
+  }
+  .fl-builder .inner-banner {
+    height: 60rem;
+  }
+  .placeholder-video {
+    display: none;
+  }
+  .placeholder-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8rem;
+  }
+  .placeholder-text h1 {
+    color: #fff;
+    margin-top: 21rem;
+  }
+  .placeholder-text .sub-heading {
+    color: #fff;
+    font-style: italic;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 768px){
+}
+@media only screen and (max-width: 768px){
+  body.page-visit .schedule-datepicker{
+    margin-bottom: 20px;
+    top: 0;
+  }
+}
