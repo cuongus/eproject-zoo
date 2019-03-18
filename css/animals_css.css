@@ -16,25 +16,50 @@ li{
 a{
     text-decoration: none;
 }
+.container{
+    width: 970px;
+}
 .clear{
     clear: both;
 }
 /* CSS SECTION 1 */
-
-.header-menu-item{
-    position: absolute;
-    top: 25%;
-    left: 0;
+.section_1 ul{
+    padding: 0;
     margin: 0;
 }
-.section_1 .container_1 .menu-primary-menu .menu-item{
-    display: inline-table;
+.header-top{
+    width: 100%;
+    float: left;
+}
+.header-bot{
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 40%;
+    margin: 0;
+}
+.section_1 .container_1 .menu-item{
+    display: inline-block;
     font-size: 18px;
     font-weight: 700;
+    position: relative;
 }
 .section_1 .container_1 .nav-link{
     color: #3399ff;
 }
+
+.header-bot .menu-item:hover{
+    background: #fff;
+}
+.header-bot .menu-item:hover .nav-link{
+    color: #5a6268;
+    border-bottom: 2px solid #ff5912;
+}
+.header-bot .menu-item:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+}
+
 
 /* CSS SECTION 3 */
 

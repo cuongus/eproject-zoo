@@ -11,10 +11,10 @@
 	<script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../vendor/bootstrap/js/validator.js"></script>
 
-	<link rel="stylesheet" href="../vendor/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="../vendor/nivo-slider/themes/light/light.css" type="text/css" media="screen" />
-
 	<!--nivo slider-->
+	<link rel="stylesheet" href="../vendor/nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../vendor/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="../vendor/jquery/jquery-1.10.2.js"></script>
 	<script src="../vendor/nivo-slider/jquery.nivo.slider.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="../css/animals_css.css">
@@ -30,7 +30,10 @@
 						</div>
 					</div>
 					<div class="col-lg-10">
-						<div class="header-menu-item">
+						<div class="header-top">
+
+						</div>
+						<div class="header-bot">
 							<ul class="menu-primary-menu">
 								<li class="menu-item">
 									<a class="nav-link" href="#">EVENTS</a>
@@ -85,6 +88,7 @@
 								</li>
 							</ul>
 						</div>
+                        <div class="clear"></div>
 					</div>
 				</div>
 			</div>
@@ -93,7 +97,16 @@
 
 	<section class="section section_2">
 		<div class="container container_2">
+			<div id="wrapper">
+				<div class="slider-wrapper theme-light">
+					<div id="slider" class="nivoSlider">
+						<img src="../images/slide/lion.jpg" data-thumb="../images/slide/lion.jpg" alt="" />
+						<img src="../images/slide/Penguins2018.jpg" data-thumb="../images/slide/Penguins2018.jpg" alt="" data-transition="slideInLeft" />
+						<img src="../images/slide/tajiri-and-cub.jpg" data-thumb="../images/slide/tajiri-and-cub.jpg" alt="" title="#htmlcaption" />
+					</div>
 
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -346,5 +359,12 @@
 			</div> <!--end C5-bot-->
 		</div> <!-- end container_5-->
 	</section> <!--end section_5-->
+
+	<script type="text/javascript">
+		//Section 2 - nivo slider
+		$(window).load(function() {
+			$('#slider').nivoSlider();
+		});
+	</script>
 </body>
 </html>
