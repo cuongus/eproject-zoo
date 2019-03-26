@@ -7,7 +7,7 @@ body{
     font-size: 16px;
     position: relative;
     background-color: #fff;
-    background-image: url('../images/bg/bg_fade.jpg');
+    background-image: url('../images/bg/bg_fade-secondary.jpg');
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -16,11 +16,11 @@ li{
     list-style-type: none;
 }
 
-a{
+.section a{
     text-decoration: none;
 }
 .container{
-    width: 970px;
+
 }
 .clear{
     clear: both;
@@ -78,11 +78,7 @@ a{
     margin: 0;
 }
 .header-bot .dropdown-item{
-
-}
-.header-bot .dropdown-menu{
-
-
+    font-weight: 600;
 }
 .header-bot .menu-item:hover{
     background: #fff;
@@ -91,6 +87,7 @@ a{
 }
 .header-bot .menu-item:hover .nav-link{
     color: #3399ff;
+    background: #2b2b2b;
 }
 .header-bot .menu-item:hover .dropdown-menu{
     display: block;
@@ -98,25 +95,21 @@ a{
 
 }
 .header-bot .dropdown-menu-item:hover .dropdown-item{
-    color: #99ccff;
+    color: #3399ff;
+    background: #2b2b2b;
 }
 /* CSS SECTION 2 */
 .section_2{
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
+.section_2 .theme-light.slider-wrapper {
+    background: unset;
+    padding: 0;
+}
+/* CSS SECTION 3 */
 
-/* CSS SECTION 3
-.section_3{
-    background-image: url(../images/bg/paws-small_groupedMany.png),
-    url(../images/bg/bambus.png),
-    url(../images/bg/paws_grouped3.png);
-    background-repeat: repeat-x,no-repeat,no-repeat;
-    background-color: #f2ebd2;
-    background-position: top,5% 100%,5% 50%;
-}
-*/
-.container_3{
-    width: 970px;
+.C3-top{
+    padding-bottom: 20px;
 }
 
 .C3-mid .item-content .pic{
@@ -142,11 +135,11 @@ a{
     transition: transform .25s;
 }
 .item:nth-child(3n+1):hover .item-content .pic{
-    transform: rotate(-5deg) translateZ(0);
+    transform: rotate(-2.5deg) translateZ(0);
     transition: transform .25s;
 }
 .item:nth-child(5n+2):hover .item-content .pic{
-    transform: rotate(3deg) translateZ(0);
+    transform: rotate(2.5deg) translateZ(0);
     transition: transform .25s;
 }
 .C3-mid .item-content .pic img{
@@ -164,44 +157,41 @@ a{
 }
 
 /* CSS SECTION 5 */
+.section_5{
+    padding-top: 100px;
+}
+
 .C5-top{
-    border-bottom: 1px solid #4e555b;
-}
-
-.C5top-left .sign-mail input{
-    font-size: 20px;
-    padding: 3px 10px;
-    border-radius: 20px;
-    width: 35%;
-}
-
-.C5top-left .sign-mail label{
-    font-size: 30px;
-    padding-left: 10px;
-    vertical-align: middle;
-    color: #4e555b;
-}
-
-.C5top-right ul li{
-    display: inline-table;
-    font-size: 30px;
-    padding: 0 20px;
-}
-.C5-top div{
-    padding: 10px 0;
-}
-
-.C5-mid{
     padding: 20px 0;
     border-bottom: 1px solid #4e555b;
+    border-top: 1px solid #4e555b;
+}
+.C5-top ul{
+    margin: 0;
+}
+.C5top-2 ul li{
+    display: inline-table;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: calc(100% / 4);
+    float: left;
+}
+.C5top-1{
     font-size: 20px;
     font-weight: 600;
 }
-.C5-mid-content ul li{
+.C5top-1 ul li{
     display: inline-table;
     padding: 0 20px;
 }
 
 .C5-bot{
     padding: 20px 0;
+}
+.C5-top ul li:hover{
+    color: #ff5912;
+}
+.C5-top ul li:hover a{
+    color: #ff5912;
 }
