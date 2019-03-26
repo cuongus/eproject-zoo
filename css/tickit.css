@@ -4,6 +4,11 @@
 }
 
 body {
+	font-size: 16px;
+    position: relative;
+    background-image: url('../img/bg_fade.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
 	background-color:#fff;
 	color: #28313b;
 	font-size: 14px;
@@ -27,6 +32,80 @@ ul {
 .container{
 	width: 1170px;
 	margin:0 auto;
+}
+.section_1 ul{
+    padding: 0;
+    margin: 0;
+}
+.section_1{
+    background-color: #fff;
+    background-image: url('../img/bg_fade.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.header-bar{
+    background-image: url('../img/head_back.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 25;
+}
+.header-bar .col-lg-2{
+    padding-right: 0;
+    text-align: right;
+}
+.header-bar .col-lg-10{
+    padding-left: 0;
+}
+.header-top{
+    width: 100%;
+    float: left;
+}
+.header-bot{
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 52%;
+    margin: 0;
+
+}
+.section_1 .container_1 .menu-item{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    width: calc(100% / 6);
+    float: left;
+    box-sizing: border-box;
+}
+.section_1 .container_1 .nav-link{
+    color: #1b5670;
+}
+.header-bot .menu-primary-menu{
+    margin: 0;
+}
+.header-bot .dropdown-item{
+
+}
+.header-bot .dropdown-menu{
+
+
+}
+.header-bot .menu-item:hover{
+    background: #fff;
+    border-radius: 2.5px;
+    border: 1px solid rgba(12, 8, 8, 0.15);
+}
+.header-bot .menu-item:hover .nav-link{
+    color: #3399ff;
+}
+.header-bot .menu-item:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+
+}
+.header-bot .dropdown-menu-item:hover .dropdown-item{
+    color: #99ccff;
 }
 .section_2 .container .left .new > h3:hover{
 	color: red;
@@ -178,7 +257,7 @@ a.PrimaryAction {
     border-radius: 5px;
     margin-top: 10px;
 }
-a:hover{
+.ten_2:hover{
 	background: #2f1147;
 	color: #fff;
 }

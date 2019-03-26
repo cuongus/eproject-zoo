@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ĐKTD</title>
+    <meta charset="uft-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/đk.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
+</head>
+<body>
+	<section class="section section_2">
+		<div class="container">
+			<div class="col-md-8">
+				<div class="panel panel-default">
+					<div class="panel-heading">Đăng ký tài khoản Nhà tuyển dụng</div>
+					<div class="panel-body form-horizontal">
+						<div class="thong_tin">
+							<h4>THÔNG TIN NHÀ TUYỂN DỤNG</h4>
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" style="text-align: left;
+                                    padding-top: 12px;">
+                                        Vị trí tuyển dụng:
+                                    </label>
+                                    <div class="col-md-9">
+                                        <select class="form-control" id="fullname" name="fullname" value="">
+                                            <option>-- Chọn vị trí tuyển dụng --</option>
+                                            <option>Nhân viên kinh doanh</option>
+                                            <option>Nhân viên maketing</option>
+                                            <option>Nhân viên bán hàng</option>
+                                            <option>Thiết kế đồ họa</option>
+                                            <option>Thời trang</option>
+                                            <option>Quản lý điều hành</option>
+                                            <option>Tư vấn</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" style="text-align: left;
+                                    padding-top: 12px;">
+                                        Bằng cấp:
+                                    </label>
+                                    <div class="col-md-9">
+                                        <select class="form-control">
+                                            <option>-- Chọn bằng cấp --</option>
+                                            <option>Thạc sĩ</option>
+                                            <option>Đại học</option>
+                                            <option>Cao đẳng</option>
+                                            <option>Trung cấp</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" style="text-align: left;
+                                    padding-top: 12px;">
+                                        Giới tính:
+                                    </label>
+                                    <div class="col-md-9">
+                                        <select class="form-control">
+                                            <option>-- Chọn giới tính --</option>
+                                            <option>Nam</option>
+                                            <option>Nữ</option>
+                                        </select>
+                                        <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 509px;">
+									</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" style="text-align: left;
+                                    padding-top: 12px;">
+                                        Công ty:
+                                    </label>
+                                    <div class="col-md-9">
+                                        <input type="text" name="temp_company_name" value class="form-control" id="temp_company_name" placeholder="Tên công ty">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" style="text-align: left;
+                                    padding-top: 12px;">
+                                        Vị trí công tác:
+                                    </label>
+                                    <div class="col-md-9">
+                                        <select class="form-control">
+                                            <option>-- Chọn vị trí công tác --</option>
+                                            <option>Nhân viên</option>
+                                            <option>Trưởng nhóm</option>
+                                            <option>Phó phòng</option>
+                                            <option>Trưởng phòng</option>
+                                            <option>Phó giám đốc</option>
+                                            <option>Giám đốc</option>
+                                            <option>Tổng giám đốc</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" style="text-align: left;
+                                    padding-top: 12px;">
+                                        Điạ điểm làm việc:
+                                    </label>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <select class="form-control" style="width: 239px;">
+                                                    <option>-- Chọn tỉnh/thành phố --</option>
+                                                    <option data-region="1" value="1">Hà Nội</option>
+                                                    <option data-region="2" value="2">Thái Bình</option>
+                                                    <option data-region="3" value="3">Hồ CHí Minh</option>
+                                                    <option data-region="4" value="4">Đà Nẵng</option>
+                                                    <option data-region="5" value="5">Huế</option>
+                                                    <option data-region="6" value="6">Hải Phòng</option>
+                                                    <option data-region="7" value="7">Lạng Sơn</option>
+                                                    <option data-region="8" value="8">Quảng Ninh</option>
+                                                    <option data-region="9" value="9">Bắc Ninh</option>
+                                                    <option data-region="10" value="10">Đồng Nai</option>
+                                                    <option data-region="11" value="11">Bình Dương</option>
+                                                    <option data-region="12" value="12">Ninh Bình</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <select class="form-control"  style="width: 239px;">
+                                                    <option>-- Chọn quận/huyện --</option>
+                                                    <option>Quận</option>
+                                                    <option>Huyện</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="form-group">
+                                <div class="col-md-12" style="text-align: center">
+                                    Bằng việc bấm nút "ĐĂNG KÝ", bạn đã đồng ý với thỏa thuận sử dụng
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12" style="text-align: center">
+                                    <button type="button">ĐĂNG KÍ</button>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+
+</body>
+</html>
