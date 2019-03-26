@@ -73,3 +73,14 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
+tin_cam_nang{
+    margin-left: 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    border-color: #e4e4e4;
+    font-weight: 600;
+}
+.tin{
+    font-size: 14px;
+}
