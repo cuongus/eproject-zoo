@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">
+
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/jobconnect.css">
+</head>
+<body>
+	<!--Start Main Menu-->
+	<header class="header">
+        <div class="container">
+		    <div class="row">
+                <!-- Navbar content -->
+                <div class=" col-lg-2 text-center menu-item menu-item-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-home"> Home</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-lg-2 text-center menu-item menu-item-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Job Seeker</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-lg-2 text-center menu-item menu-item-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Company</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-lg-2 text-center menu-item menu-item-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Share</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-lg-4 menu-item" style="padding-left: 30px;">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder=" " aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+		    </div>
+        </div>
+	</header> <!--end header--> <!--End Main Menu-->
+
+	<section class="section section_2">
+		<div class="container container_2">
+
+		</div>
+	</section> <!--end section_2-->
+
+	<section class="section section_3">
+
+	</section> <!--end section_3-->
+
+	<section class="section section_4">
+		<div class="container container_4">
+			<div class="row">
+				<div class="left col-lg-2">
+					<div class="kinh-nghiem-PV">
+						<p></p>
+						<ul>
+							<li></li>
+						</ul>
+					</div>
+					<div class="mau-CV">
+
+					</div>
+				</div>
+				<div class="list-center danhsach col-lg-8">
+					<div ng-app="myApp" ng-controller="namesCtrl">
+						<div class="thanh-search">
+							<div class="title-search-widget">
+								<p class="title-search">
+									FIND JOB LIKE YOU
+								</p>
+							</div>
+							<div class="search-widget">
+								<div class="search-widget-content">
+									<form>
+										<div class="active-cyan-4 widget-item">
+											<input type="text" ng-model="test" class="form-control" type="text" placeholder="Search" aria-label="Search">
+										</div>
+										<div class="form-group nganh-nghe widget-item">
+											<select class="form-control" ng-model="test.nganh_nghe">
+												<option selected value="">All Career</option>
+												<option value="Ads">Ads</option>
+												<option value="Industrial Designer">Industrial Designer</option>
+												<option value="Software Engineer, Compiler">Software Engineer, Compiler</option>
+												<option value="Technology">Technology</option>
+												<option value="Insurrance">Insurrance</option>
+												<option value="Maintenance / Repair">Maintenance / Repair</option>
+												<option value="Land">Land</option>
+												<option value="Translate">Translate</option>
+												<option value="Mechanical">Mechanical</option>
+												<option value="Customer service">Customer service</option>
+												<option value="Pharmacist">Pharmacist</option>
+												<option value="Educations">Educations</option>
+											</select>
+										</div>
+										<div class="form-group tinh-thanh widget-item">
+											<select class="form-control" ng-model="test.dia_diem	">
+												<option selected value="">All Location</option>
+												<option value="Menlo Park">Menlo Park</option>
+												<option value="Seattle">Seattle</option>
+												<option value="San Francisco">San Francisco</option>
+												<option value="Hà Nội">Hà Nội</option>
+												<option value="Hồ Chí Minh">Hồ Chí Minh</option>
+												<option value="Đà Nẵng">Đà Nẵng</option>
+												<option value="Hải Phòng">Hải Phòng</option>
+
+											</select>
+										</div>
+										<div class="clearfix"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<ul>
+							<li ng-repeat="x in names | filter:test">
+								<div>
+									<div class="vieclam">
+										<div class="tenvieclam" style="font-weight: bold;">
+											<i class="fas fa-star"></i><span>  {{x.ten_baidang}}</span>
+										</div>
+										<div class="row">
+											<div class="col-lg-10">
+												<div class="row">
+													<div class="col">
+														<i class="far fa-building"></i><span> {{x.ten_cty}}</span>
+													</div>
+
+													<div class="col">
+														<i class="fas fa-map-marker-alt"></i><span> {{x.dia_diem}}</span>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col">
+														<i class="far fa-clock"></i><span>  Full time</span>
+													</div>
+
+													<div class="col">
+														<i class="far fa-money-bill-alt"></i><span>  {{x.muc_luong}}</span>
+													</div>
+
+													<div class="col">
+														<p>Closes:<span>  {{x.han_nop}}</span></p>
+													</div>
+												</div>
+
+											</div>
+											<div class="col-lg-2">
+												<img src="{{x.logo_cty}}">
+											</div>
+										</div>
+										<!-- Button trigger modal -->
+										<a href="html/chi-tiet.html">xem thêm >></a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="right col-lg-2">
+					<!-- <div class="job-bg">
+						<div class="job-bg-content">
+							<div class="btn-tuyen">
+								<div>
+									<a><span><i class="far fa-file-alt"></i></span></a>
+									<br>
+									<a href="#">Recruitment</a>
+								</div>
+							</div>
+							<div class="btn-tao-hs">
+								<div>
+									<a><span><i class="fas fa-folder-plus"></i></span></a>
+									<br>
+									<a href="#">Profile</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section class="section section_5">
+        <div class="container container_5">
+            <div class="kenh-viec-lam">
+                <h1> <span>Our Employment Channels</span>
+                    <br>
+                </h1>
+                <div class="row">
+                    <div class="col-lg-4 quan-ly">
+                        <div class="quanly-content">
+                            <div class="pic">
+                            </div>
+                            <div class="kvl-info">
+                                <img src="../images/channel-icon-tmj.png">
+                                <div class="channel-label">JOB MANAGER</div>
+                                <div class="number-jobs">2604 Job</div>
+                                <a target="_blank" href="#" class="btn btn-primary" tabindex="-1">Xem</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 job-IT">
+                        <div class="jobIT-content">
+                            <div class="pic">
+                            </div>
+                            <div class="kvl-info">
+                                <img src="../images/channel-icon-it.png">
+                                <div class="channel-label">JOB IT</div>
+                                <div class="number-jobs">1580 Job</div>
+                                <a target="_blank" href="#" class="btn btn-primary" tabindex="-1">Xem</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 moi-tot-nghiep">
+                        <div class="newpass-content">
+                            <div class="pic">
+                            </div>
+                            <div class="kvl-info">
+                                <img src="../images/channel-icon-intern.png">
+                                <div class="channel-label">GRADUATED</div>
+                                <div class="number-jobs">2604 Job</div>
+                                <a target="_blank" href="#" class="btn btn-primary" tabindex="-1">Xem</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--end container_5-->
+    </section> <!--end section_5-->
+
+	<section class="section section_6">
+		<div class="container container_6">
+
+		</div> <!--end container_6-->
+	</section> <!--end section_6-->
+    <footer>
+        <div class="footer">
+            <div class="container footer-content">
+                <div class="row inside-footer">
+                    <div class="footer-info col-md-12 col-xs-12">
+                        <div class="title text-center">
+                            <h4 class="text-uppercase">
+                                TOP RECRUITMENT ECONOMIC SYSTEM
+                            </h4>
+                            <p class="">
+                                S-class1810A Job Connect. Find jobs, find jobs quickly, recruit reputable and effective.
+                            </p>
+                        </div>
+                        <p>Công Ty S-Class 1810A</p>
+                        <div class="row">
+                            <div class="right col-md-6">
+                                <p>
+                                    <i class="fas fa-phone-square"></i>
+                                    &nbsp;
+                                    <strong>Phone:</strong>
+                                    <span>012 3456789</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope"></i>
+                                    &nbsp;
+                                    <strong>Email:</strong>
+                                    <span>sclass1810A.job.connect@gmail.com</span>
+                                </p>
+                                <p>
+                                    <i class="far fa-building"></i>
+                                    &nbsp;
+                                    <strong>Address:</strong>
+                                    <span>No 1. Dinh Tien Hoang Street, Hoan Kiem, Ha Noi</span>
+                                </p>
+                            </div>
+                            <div class="right col-md-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<!-- Fillter -->
+	<script type="text/javascript">
+		angular.module('myApp', []).controller('namesCtrl', function($scope,$http) {
+			$http({
+				method: 'GET',
+				url: 'congty.json'
+			}).then(function successCallback(response) {
+				var y  = response.data;
+				var z = [];
+				for(var i=0; i<10; i++){
+					//console.log(y[i]);
+					z.push(y[i]);
+				}
+				$scope.names = z;
+			});
+		});
+	</script>
+</body>
+</html>
