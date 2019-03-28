@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-size: 16px;
     position: relative;
@@ -163,6 +165,25 @@ a{
     text-align: center;
 }
 
+/* SS4*/
+.container_4{
+    text-align: center;
+}
+
+.pay{
+    display: none;
+}
+.col {
+    display: inline-block;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    height: 500px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    margin: 15px;
+}
 
 /* CSS SECTION 5 */
 .C5-top{
@@ -206,3 +227,5 @@ a{
 .C5-bot{
     padding: 20px 0;
 }
+
+
