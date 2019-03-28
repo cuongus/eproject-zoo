@@ -12,12 +12,14 @@ a {
 }
 
 /*-------------------------------------------*/
-
+.section_2 {
+	background: url(../images/color-background.jpg);
+}
 .section_2 .container {
 	width: 600px;
 }
 .box_animals {
-	width: 572px;
+	width: 570px;
 	background: #f4f6f8;
 }
 
