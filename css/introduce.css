@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*-------------------------------------------*/
+
+.section_2 .container {
+	width: 600px;
+}
+.box_animals {
+	width: 572px;
+	background: #f4f6f8;
+}
+
+.box_animals img{
+	width: 100%;
+	height: auto;
+}
+
+.text_animals {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.text_animals2 {
+	color: #000;
+	margin: 20px;
+}
+
+.table_animals {
+	border-spacing: 0;
+	border-top: 1px solid #000;
+	padding-top: 20px;
+	margin: 0 20px 15px;
+}
+
+.text_animals3 {
+	padding-top: 20px;
+}
+
+.text_animals3 p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	font-style: normal;
+	line-height: 18px;
+	letter-spacing: 0;
+}
+
+
