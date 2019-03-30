@@ -28,7 +28,7 @@ MongoClient.connect(url, function (err, db) {
             var idloai = req.query.idloai;
 
             var page = req.query.page;
-            var limit = 12;
+            var limit = 16;
 
             if(idloai){
                 objectParam.idloai = idloai;

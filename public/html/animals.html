@@ -9,7 +9,7 @@
 
 	<script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../vendor/bootstrap/js/validator.js"></script>
+
 
 	<!--nivo slider-->
 	<link rel="stylesheet" href="../vendor/nivo-slider/themes/light/light.css" type="text/css" media="screen" />
@@ -24,7 +24,7 @@
 		<div class="container container_1">
 			<div class="header-bar">
 				<div class="row">
-					<div class="col-lg-2">
+					<div class="col-lg-2 logo">
 						<div class="logo">
 							<p><a href="#"><img src="../images/logo/logo1.png" width="130"></a></p>
 						</div>
@@ -34,56 +34,53 @@
 
 						</div>
 						<div class="header-bot">
-							<ul class="menu-primary-menu">
+							<ul class="primary-menu">
 								<li class="menu-item">
-									<a class="nav-link" href="#">EVENTS</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Zoo Events</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Tickets</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Newsfeed</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Private Events</a></li>
+									<a class="menu-item-link" href="#">EVENTS</a>
+									<ul class="menu-dropdown">
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Zoo Events</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Tickets</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Newsfeed</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Private Events</a></li>
 									</ul>
 								</li>
 
 								<li class="menu-item">
-									<a class="nav-link" href="#">TICKETS</a>
+									<a class="menu-item-link" href="#">TICKETS</a>
 								</li>
 
 								<li class="menu-item">
-									<a class="nav-link" href="#">ANIMALS</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Most Endangered Animals</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Birds</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Mammals</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Reptiles</a></li>
+									<a class="menu-item-link" href="#">ANIMALS</a>
+									<ul class="menu-dropdown">
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Most Endangered Animals</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Birds</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Mammals</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Reptiles</a></li>
 									</ul>
 								</li>
 
 								<li class="menu-item">
-									<a class="nav-link" href="#">FEEDBACK</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">What Can Do</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Form</a></li>
+									<a class="menu-item-link" href="#">FEEDBACK</a>
+
+								</li>
+
+								<li class="menu-item">
+									<a class="menu-item-link" href="#">SUPPORT</a>
+									<ul class="menu-dropdown">
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Buy Tickets</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Map</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Hotline</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Sign Membership</a></li>
 									</ul>
 								</li>
 
 								<li class="menu-item">
-									<a class="nav-link" href="#">SUPPORT</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Buy Tickets</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Map</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Hotline</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Sign Membership</a></li>
-									</ul>
-								</li>
-
-								<li class="menu-item">
-									<a class="nav-link" href="#">ABOUT</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">What We Do</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">History</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Contact</a></li>
-										<li class="dropdown-menu-item"><a class="dropdown-item" href="#">Job & Internships</a></li>
+									<a class="menu-item-link" href="#">ABOUT</a>
+									<ul class="menu-dropdown">
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">What We Do</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">History</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Contact</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Job & Internships</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -110,241 +107,29 @@
 	</section>
 
 	<section class="section section_3"> <!-- Banner Content -->
-		<div class="container container_3">
+		<div class="container container_3" id="myDIV">
 			<div class="C3-top row">
-				<div class="C3-top-left col-lg-9">
-					<h2><a href="#">ANIMALS</a></h2>
+				<div class="C3-top-left col-lg-4">
+					<h2><a href="animals.html"></a></h2>
 				</div>
-				<div class="C3-top-right col-lg-3">
-
-
+				<div class="C3-top-right col-lg-8">
+					<div class="col-lg-6">
+						<input class="fil-search" id="myInput" type="text" placeholder="Search..">
+					</div>
+					<div class="form-group col-lg-6">
+						<select class="form-control" id="single">
+							<option value="">All</option>
+							<option value="1">birds</option>
+							<option value="2">mammals</option>
+							<option value="3">reptiles</option>
+						</select>
+					</div>
 				</div>
 			</div> <!--end C3 - top-->
 
-			<div class="C3-mid">
+			<div class="C3-mid" id="list_animals">
 				<div class="row">
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/AndeanCondor-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/BaliMynah_207x116.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
 
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/barnowl_small.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/aardvark-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/AfricanLion-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/crested-screamer_207-x-116.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/ayeaye-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/BlueEyedLemur-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/Marianafruitdove-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/GiantElephantShrew-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/jaguar-icon.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/AfricanCrestedPorcupine.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/Emu_207x116.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/Chicken-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/AmurTiger-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/TurkeyVulture-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/Victoriacrownedpigeon-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/mammals/MongooseLemur.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/Micronesiankingfisher-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="item col-lg-3">
-						<div class="item-content">
-							<div class="pic">
-								<a href="#"><img src="../images/birds/RhinocerosHornbill-tn.jpg" width="200"></a>
-							</div>
-							<div class="title">
-								<p><a href="#">Barnowl</a></p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
 
 				</div>
 
@@ -413,6 +198,58 @@
 			$('#slider').nivoSlider();
 		});
 
+	</script>
+	<script>
+		var filter;
+		var page;
+		function displayVals() {
+			var singleValues = $( "#single" ).val();
+			// When using jQuery 3:
+			// var multipleValues = $( "#multiple" ).val();
+			//$( "p" ).html( "<b>Single:</b> " + singleValues);
+			filter = singleValues;
+		}
+		console.log(filter);
+		$( "select" ).change(displayVals );
+		displayVals();
+		var url = 'http://localhost:3333/list_animals' + '?page='+page+'&idloai='+filter;
+		$.ajax({
+			url: url,
+			method: "GET",
+			success: function(result){
+				console.log(result);
+				var list = result;
+				var content_html = '';
+				for (var i = 0; i < list.length; i++) {
+
+					content_html +=		'<div class="item col-lg-3" id="itemfil">';
+					content_html +=		'<div class="item-content">';
+					content_html +=		'<div class="pic">';
+					content_html +=		'<a href="#"><img src="../'+list[i].pic+'" width="200"></a>';
+					content_html +=		'</div>';
+					content_html +=		'<div class="title">';
+					content_html +=		'<p><a href="#" id="name">'+list[i].title+'</a></p>';
+					content_html +=		'</div>';
+					content_html +=			'<div class="clear">';
+					content_html +=			'</div>';
+					content_html +=		'</div>';
+					content_html +=		'</div>';
+				}
+				document.getElementById("list_animals").innerHTML =  content_html;
+			}
+		});
+	</script>
+
+	<!--Filter -->
+	<script>
+		$(document).ready(function(){
+			$("#myInput").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$("#list_animals #itemfil").filter(function() {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			});
+		});
 	</script>
 </body>
 </html>
