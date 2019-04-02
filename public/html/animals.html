@@ -36,46 +36,52 @@
 						<div class="header-bot">
 							<ul class="primary-menu">
 								<li class="menu-item">
-									<a class="menu-item-link" href="#">EVENTS</a>
+									<a class="menu-item-link" href="event.html">EVENTS</a>
+                                    <!--
 									<ul class="menu-dropdown">
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Zoo Events</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Tickets</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Newsfeed</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Private Events</a></li>
 									</ul>
+									-->
 								</li>
 
 								<li class="menu-item">
-									<a class="menu-item-link" href="#">TICKETS</a>
+									<a class="menu-item-link" href="ticket.html">TICKETS</a>
 								</li>
 
 								<li class="menu-item">
-									<a class="menu-item-link" href="#">ANIMALS</a>
+									<a class="menu-item-link" href="animals.html">ANIMALS</a>
+                                    <!--
 									<ul class="menu-dropdown">
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Most Endangered Animals</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Birds</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Mammals</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Reptiles</a></li>
 									</ul>
+									-->
 								</li>
 
 								<li class="menu-item">
-									<a class="menu-item-link" href="#">FEEDBACK</a>
+									<a class="menu-item-link" href="feedback.html">FEEDBACK</a>
 
 								</li>
 
 								<li class="menu-item">
-									<a class="menu-item-link" href="#">SUPPORT</a>
+									<a class="menu-item-link" href="support.html">SUPPORT</a>
+                                    <!--
 									<ul class="menu-dropdown">
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Buy Tickets</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Map</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Hotline</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Sign Membership</a></li>
 									</ul>
+									-->
 								</li>
 
 								<li class="menu-item">
-									<a class="menu-item-link" href="#">ABOUT</a>
+									<a class="menu-item-link" href="about.html">ABOUT</a>
 									<ul class="menu-dropdown">
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">What We Do</a></li>
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">History</a></li>
@@ -103,7 +109,9 @@
 					<img src="../images/slide/CarribeanFlamingo-large.png" data-thumb="images/slide/CarribeanFlamingo-large.png" alt="" />
 				</div>
 			</div>
+            <div class="clear"></div>
 		</div>
+
 	</section>
 
 	<section class="section section_3"> <!-- Banner Content -->
@@ -200,6 +208,11 @@
 
 	</script>
 	<script>
+		/*
+		function filters() {
+			var x = jQuery("#type_select").val();
+		}
+		 */
 		var filter;
 		var page;
 		function displayVals() {
@@ -208,11 +221,37 @@
 			// var multipleValues = $( "#multiple" ).val();
 			//$( "p" ).html( "<b>Single:</b> " + singleValues);
 			filter = singleValues;
+			var url = 'http://localhost:3333/list_animals'+'?page='+page+'&idloai='+filter;
+			$.ajax({
+				url: url,
+				method: "GET",
+				success: function(result){
+					console.log(result);
+					var list = result;
+					var content_html = '';
+					for (var i = 0; i < list.length; i++) {
+
+						content_html +=		'<div class="item col-lg-3" id="itemfil">';
+						content_html +=		'<div class="item-content">';
+						content_html +=		'<div class="pic">';
+						content_html +=		'<a href="introduce.html?id="'+list[i].id+'><img src="../'+list[i].pic+'" width="200"></a>';
+						content_html +=		'</div>';
+						content_html +=		'<div class="title">';
+						content_html +=		'<p><a href="#" id="name">'+list[i].title+'</a></p>';
+						content_html +=		'</div>';
+						content_html +=			'<div class="clear">';
+						content_html +=			'</div>';
+						content_html +=		'</div>';
+						content_html +=		'</div>';
+					}
+					document.getElementById("list_animals").innerHTML =  content_html;
+				}
+			});
 		}
-		console.log(filter);
+
 		$( "select" ).change(displayVals );
 		displayVals();
-		var url = 'http://localhost:3333/list_animals' + '?page='+page+'&idloai='+filter;
+		var url = 'http://localhost:3333/list_animals';
 		$.ajax({
 			url: url,
 			method: "GET",
@@ -225,10 +264,10 @@
 					content_html +=		'<div class="item col-lg-3" id="itemfil">';
 					content_html +=		'<div class="item-content">';
 					content_html +=		'<div class="pic">';
-					content_html +=		'<a href="#"><img src="../'+list[i].pic+'" width="200"></a>';
+					content_html +=		'<a href="introduce.html?id="'+list[i].id+'><img src="../'+list[i].pic+'" width="200"></a>';
 					content_html +=		'</div>';
 					content_html +=		'<div class="title">';
-					content_html +=		'<p><a href="#" id="name">'+list[i].title+'</a></p>';
+					content_html +=		'<p><a href="introduce.html" id="name">'+list[i].title+'</a></p>';
 					content_html +=		'</div>';
 					content_html +=			'<div class="clear">';
 					content_html +=			'</div>';

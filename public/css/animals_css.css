@@ -131,9 +131,13 @@ li{
 .section_2{
     padding-bottom: 50px;
 }
-.section_2 .theme-light.slider-wrapper {
+.section_2 .theme-light{
     background: unset;
     padding: 0;
+
+}
+.section_2 .slider-wrapper{
+    overflow: hidden;
 }
 /* CSS SECTION 3 */
 

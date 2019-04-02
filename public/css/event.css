@@ -127,23 +127,12 @@ li{
 	font-size: 18px;
 	font-weight: 400;
 }
-/* CSS SECTION 2 */
-.section_2{
-	padding-bottom: 50px;
-}
-.section_2 .theme-light.slider-wrapper {
-	background: unset;
-	padding: 0;
-}
 
-.section2f{
-	float: left;
-	width: 100%;
-}
-.inner-banner{
+/* CSS SECTION_2*/
+.section_2 .inner-banner{
 	text-align: center;
 }
-.conten {
+.section_2 .conten {
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -151,7 +140,7 @@ li{
 	margin-left: auto;
 	max-width: 1140px;
 }
-.inner-banner_conten {
+.section_2 .inner-banner_conten {
 	background: #8550a0;
 	text-align: center;
 	padding: 4rem 6rem 5rem;
@@ -160,49 +149,55 @@ li{
 	box-shadow: 1px 4px 6px #b3b3b3;
 	position: relative;
 }
-.inner-banner_conten h1 {
+.section_2 .inner-banner_conten h1 {
 	margin-top: 0;
 	font-size: 5.6rem;
 	line-height: 5.6rem;
 	margin-bottom: 0;
 }
-h1 {
+.section_2 h1 {
 	font-size: 6.8rem;
 	font-weight: 900;
 }
-.inner-banner_conten h1 + .sub-heading {
+.section_2 .inner-banner_conten h1 + .sub-heading {
 	margin-top: 6rem;
 }
-.inner-banner_conten .sub-heading {
+.section_2 .inner-banner_conten .sub-heading {
 	font-size: 2rem;
 	line-height: 2.6rem;
 }
-.font-italic {
+.section_2 .font-italic {
 	font-style: italic;
 }
-.click{
+.section_2 .click{
 	font-weight: 700;
 	margin-bottom: 2rem;
 	padding-top: 3.5rem;
     font-size: 20px;
 }
-.dropdown{
-    float: left;
-    margin-right: 60px;
-    font-size: 20px;
+
+.section_2 .btn{
+	background-color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	color: #000000;
+	margin-left: 10px;
 }
-.checkbox{
-    text-align: center;
+.section_2 .block-sizes li{
+	margin-bottom: 10px;
+	margin-left: 20px;
+    margin-top: 10px;
 }
-.dropdown-menu{
-    text-align: center;
-	white-space: nowrap;
-	padding: 1.4rem 1.5rem;
+.section_2 .small{
+	font-weight: 700;
+	font-size: 20px;
+	color: #000000;
 }
-.dropdown1{
-	margin-left: auto;
+.section_2 .dropdown{
+	float: left;
+	margin-right: 90px;
 }
-.title{
+.section_2 .title{
 	position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -210,7 +205,7 @@ h1 {
     right: 1.5rem;
     text-align: center;
 }
-.title > span{
+.section_2 .title > span{
 	font-size: 1.5rem;
     text-transform: uppercase;
     display: inline-block;
@@ -221,11 +216,15 @@ h1 {
     font-weight: 600;
 }
 
-.title span:hover {
+.section_2 .title span:hover {
 	border-bottom: 4px solid red;
 	color: red;
 }
-
+.section_2 .row{
+	margin-top: 111px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
 
 /* CSS SECTION 5 */
 .section_5{
@@ -267,8 +266,3 @@ h1 {
 .C5-top ul li:hover a{
 	color: #ff5912;
 }
-
-
-
-
-
