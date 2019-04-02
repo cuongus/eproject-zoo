@@ -165,7 +165,7 @@ a{
     text-align: center;
 }
 
-/* SS4*/
+/* Section 4*/
 .container_4{
     text-align: center;
 }
@@ -183,6 +183,62 @@ a{
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
     margin: 15px;
+}
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    overflow-y: hidden;
+    transition: 1s;
+}
+
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+.info{
+    background-color: white;
+    height: auto;
+    position: relative;
+    top: 15%;
+    width: 500px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    color: black;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    background-image: url('../images/4.jpg');
+}
+
+.info .button{
+    width: 20%;
 }
 
 /* CSS SECTION 5 */
