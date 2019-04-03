@@ -247,8 +247,6 @@ h2{
 }
 .row {
     width: 100%;
-    max-width: 1170px;
-    min-width: 755px;
     margin: 0 auto;
 }
 img{
@@ -256,10 +254,10 @@ img{
     height: auto;
 }
 .box1{
-	margin-right: 13px;
+	margin-right: 23px;
     float: left;
     min-height: 1px;
-    width: 22.05%;
+    width: 235px;
     margin-left: 19px;
 }
 .index-title{
@@ -274,6 +272,10 @@ img{
     color: #a6a6a6;
     display: block;
     line-height: 1em;
+}
+.col-md-6{
+	    padding-right: 25px;
+    padding-left: 25px;
 }
 .section_5{
 	padding-top: 100px;
