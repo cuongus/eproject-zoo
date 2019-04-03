@@ -127,157 +127,17 @@ li{
 	font-size: 18px;
 	font-weight: 400;
 }
-a{
-	text-decoration: none;
-	color: #34404b;
-}
-a:hover{
-	color: green;
-	text-decoration: none;
-}
-ul {
-	list-style-type: none;
-}
-.section{
-	float: left;
-	width: 100%;
-}
-.inner-banner{
-	text-align: center;
-}
-.conten {
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-	max-width: 1140px;
-}
-.inner-banner_conten {
-	background: #8550a0;
-	text-align: center;
-	padding: 40px 60px 50px;
-	color: #fff;
-	margin-top: -120px;
-	box-shadow: 1px 4px 6px #b3b3b3;
-	position: relative;
-}
-.inner-banner_conten h1 {
-	margin-top: 0;
-	font-size: 56px;
-	line-height: 56px;
-	margin-bottom: 0;
-}
-h1 {
-	font-size: 68px;
-	font-weight: 900;
-}
-.inner-banner_conten h1 + .sub-heading {
-	margin-top: 60px;
-}
-.inner-banner_conten .sub-heading {
-	font-size: 20px;
-	line-height: 26px;
-}
-.font-italic {
-	font-style: italic;
-}
-.click{
-	font-weight: 700;
-	margin-bottom: 20px;
-	padding-top: 35px;
-    font-size: 20px;
-}
 
-.btn{
-	background-color: #fff;
-	font-weight: 700;
-	font-size: 20px;
-	color: #000000;
-	margin-left: 10px;
-}
-.block-sizes li{
-	margin-bottom: 10px;
-	margin-left: 20px;
-    margin-top: 10px;
-}
-.small{
-	font-weight: 700;
-	font-size: 20px;
-	color: #000000;
-}
-.dropdown{
-	float: left;
-	margin-right: 90px;
-}
-.title{
-	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15px;
-    right: 15px;
-    text-align: center;
-}
-.title > span{
-	font-size: 15px;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 0 10px .80px;
-    border-bottom: 4px solid #E3C72E;
-    letter-spacing: 1px;
-    color: #fff;
-    font-weight: 600;
-}
 
-.title span:hover {
-	border-bottom: 4px solid red;
-	color: red;
+#map {
+    height: 400px;  
+    width: 100%;  
 }
-.row{
-	margin-top: 111px;
-    margin-left: 20px;
-}
-h2{
-    padding-top: 66px;
+h3{
+	padding-top: 66px;
     font-weight: 600;
     font-size: 40px;
-    color: red; 
-
-}
-
-.content {
-    padding-top: 30px;
-    border-top: 1px solid #e7e7e7;
-}
-.row {
-    width: 100%;
-    max-width: 1170px;
-    min-width: 755px;
-    margin: 0 auto;
-}
-img{
-	max-width: 100%;
-    height: auto;
-}
-.box1{
-	margin-right: 13px;
-    float: left;
-    min-height: 1px;
-    width: 22.05%;
-    margin-left: 19px;
-}
-.index-title{
-	color: #555;
-    font-size: 25px;
-    margin-top: 5px;
-    text-transform: capitalize;
-
-}
-.make-subhead{
-	font-size: 0.675em;
-    color: #a6a6a6;
-    display: block;
-    line-height: 1em;
+    color: red;
 }
 .section_5{
 	padding-top: 100px;
