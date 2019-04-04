@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MAP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/fontawesome/css/all.css">
+  <script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../vendor/bootstrap/js/validator.js"></script>
+    <link rel="stylesheet" href="../css/map.css">
+  </head>
+  <body>
+    <section class="section section_1">
+  <div class="container container_1">
+    <div class="header-bar">
+      <div class="row">
+        <div class="col-lg-2 logo">
+          <div class="logo">
+            <p><a href="../home.html"><img src="../images/logo/logo1.png" width="130"></a></p>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <div class="header-top">
+
+          </div>
+          <div class="header-bot">
+            <ul class="primary-menu">
+              <li class="menu-item">
+                <a class="menu-item-link" href="event.html">EVENTS</a>
+                <!--
+                <ul class="menu-dropdown">
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Zoo Events</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Tickets</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Newsfeed</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Private Events</a></li>
+                </ul>
+                -->
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-item-link" href="ticket.html">TICKETS</a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-item-link" href="animals.html">ANIMALS</a>
+                <!--
+                <ul class="menu-dropdown">
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Most Endangered Animals</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Birds</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Mammals</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Reptiles</a></li>
+                </ul>
+                -->
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-item-link" href="https://forms.gle/pCniTG2QCSqgUktw8">FEEDBACK</a>
+
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-item-link" href="map.html">MAP</a>
+                <!--
+                <ul class="menu-dropdown">
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Buy Tickets</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Map</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Hotline</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Sign Membership</a></li>
+                </ul>
+                -->
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-item-link" href="about.html">ABOUT</a>
+                <ul class="menu-dropdown">
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="about/volunteer.html">Volunteer</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="about/history.html">History</a></li>
+                  <li class="menu-item-drop"><a class="menu-itemdrop-link" href="about/job.html">Job & Internships</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section section_2">
+    <div class="container container_2">
+      <h3>CENTRAL Zoo Map</h3>
+ 
+    <div id="map"></div>
+    <script>
+
+function initMap() {
+  
+  var uluru = {lat: 21.0288111, lng: 105.7816351};
+  
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 17, center: uluru});
+ 
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZkhD8Q5_XkZEthioPUXM0_bYX3Lp56WI&callback=initMap">
+    </script>
+    </div>
+  </section>
+
+
+    <section class="section section_5"> <!-- Footer -->
+      <div class="container container_5">
+        <div class="C5-top">
+          <div class="row">
+            <div class="col-lg-12 C5top-right text-center">
+              <ul>
+                <li><span><a href="#"><i class="fab fa-facebook-f"></i></a></span></li>
+                <li><span><a href="#"><i class="fab fa-twitter"></i></a></span></li>
+                <li><span><a href="#"><i class="fab fa-youtube"></i></a></span></li>
+                <li><span><a href="#"><i class="fab fa-instagram"></i></a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!--end C5-top-->
+
+        <div class="C5-mid">
+          <div class="C5-mid-content text-center">
+            <ul>
+              <li><a href="#">About Central Zoo</a></li>
+              <li><a href="#">Map</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div> <!--end C5-mid-->
+
+        <div class="C5-bot">
+          <div class="C5-bot-content">
+            <p>
+              5500 Phinney Ave. N., Seattle, WA 98103   |  206.548.2500  | <a href="#">zooinfo@centralzoo.org</a>
+            </p>
+            <p>
+              Central Park Zoo is a registered 501(c)(3) nonprofit organization. ©2019 Central Park Zoo
+            </p>
+          </div>
+        </div> <!--end C5-bot-->
+      </div> <!-- end container_5-->
+    </section> <!--end section_5-->
+    
+  </body>
+</html>
