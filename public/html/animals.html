@@ -26,7 +26,7 @@
 				<div class="row">
 					<div class="col-lg-2 logo">
 						<div class="logo">
-							<p><a href="#"><img src="../images/logo/logo1.png" width="130"></a></p>
+							<p><a href="../home.html"><img src="../images/logo/logo1.png" width="130"></a></p>
 						</div>
 					</div>
 					<div class="col-lg-10">
@@ -64,12 +64,12 @@
 								</li>
 
 								<li class="menu-item">
-									<a class="menu-item-link" href="feedback.html">FEEDBACK</a>
+									<a class="menu-item-link" href="https://forms.gle/pCniTG2QCSqgUktw8">FEEDBACK</a>
 
 								</li>
 
 								<li class="menu-item">
-									<a class="menu-item-link" href="support.html">SUPPORT</a>
+									<a class="menu-item-link" href="map.html">MAP</a>
                                     <!--
 									<ul class="menu-dropdown">
 										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Buy Tickets</a></li>
@@ -83,10 +83,9 @@
 								<li class="menu-item">
 									<a class="menu-item-link" href="about.html">ABOUT</a>
 									<ul class="menu-dropdown">
-										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">What We Do</a></li>
-										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">History</a></li>
-										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Contact</a></li>
-										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="#">Job & Internships</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="about/volunteer.html">Volunteer</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="about/history.html">History</a></li>
+										<li class="menu-item-drop"><a class="menu-itemdrop-link" href="about/job.html">Job & Internships</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -141,22 +140,22 @@
 
 				</div>
 
-				<div class="next-page">
-					<nav aria-label="Page navigation example">
-						<ul class="pagination justify-content-end">
-							<li class="page-item disabled">
-								<a class="page-link" href="#" tabindex="-1">Previous</a>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item">
-								<a class="page-link" href="#">Next</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
 			</div> <!--end C3-mid-->
+            <div class="C3-bot col-lg-6 col-lg-offset-3">
+                <div class="next-page text-center">
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a onclick="change(displayVals)" href="animals.html?page=1">1</a></li>
+                        <li><a onclick="change(displayVals)" href="animals.html?page=2">2</a></li>
+                        <li><a onclick="change(displayVals)" href="animals.html?page=3">3</a></li>
+                        <li><a onclick="change(displayVals)" href="animals.html?page=4">4</a></li>
+                        <li><a onclick="change(displayVals)" href="animals.html?page=5">5</a></li>
+						<li><a onclick="change(displayVals)" href="animals.html?page=6">6</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
 		</div> <!-- end container_3-->
 	</section> <!--end section_3-->
 
@@ -166,39 +165,45 @@
 		</div> <!-- end container_4-->
 	</section> <!--end section_4-->
 
-	<section class="section section_5"> <!-- Footer -->
-		<div class="container container_5">
-			<div class="C5-top">
-				<div class="row">
-					<div class="C5top-1 col-lg-9 text-center">
-							<ul>
-								<li><a href="#">About Central Zoo</a></li>
-								<li><a href="#">Map</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Terms of Use</a></li>
-							</ul>
-					</div>
-					<div class="col-lg-3 C5top-2 text-center">
-						<ul>
-							<li class="C5-top-social"><span><a href="#"><i class="fab fa-facebook-f"></i></a></span></li>
-							<li class="C5-top-social"><span><a href="#"><i class="fab fa-twitter"></i></a></span></li>
-							<li class="C5-top-social"><span><a href="#"><i class="fab fa-youtube"></i></a></span></li>
-							<li class="C5-top-social"><span><a href="#"><i class="fab fa-instagram"></i></a></span></li>
-						</ul>
-					</div>
-				</div>
-			</div> <!--end C5-top-->
+    <section class="section section_5"> <!-- Footer -->
+        <div class="container container_5">
+            <div class="C5-top">
+                <div class="row">
+                    <div class="col-lg-12 C5top-right text-center">
+                        <ul>
+                            <li><span><a href="#"><i class="fab fa-facebook-f"></i></a></span></li>
+                            <li><span><a href="#"><i class="fab fa-twitter"></i></a></span></li>
+                            <li><span><a href="#"><i class="fab fa-youtube"></i></a></span></li>
+                            <li><span><a href="#"><i class="fab fa-instagram"></i></a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!--end C5-top-->
 
-			<div class="C5-bot">
-				<div class="C5-bot-content">
-					<p>
-						Central Park Zoo is a registered 501(c)(3) nonprofit organization. ©2019 Central Park Zoo
-					</p>
-				</div>
-			</div> <!--end C5-bot-->
-		</div> <!-- end container_5-->
-	</section> <!--end section_5-->
+            <div class="C5-mid">
+                <div class="C5-mid-content text-center">
+                    <ul>
+                        <li><a href="#">About Central Zoo</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div> <!--end C5-mid-->
+
+            <div class="C5-bot">
+                <div class="C5-bot-content">
+                    <p>
+                        5500 Phinney Ave. N., Seattle, WA 98103   |  206.548.2500  | <a href="#">zooinfo@centralzoo.org</a>
+                    </p>
+                    <p>
+                        Central Park Zoo is a registered 501(c)(3) nonprofit organization. ©2019 Central Park Zoo
+                    </p>
+                </div>
+            </div> <!--end C5-bot-->
+        </div> <!-- end container_5-->
+    </section> <!--end section_5-->
 
 	<script type="text/javascript">
 		//Section 2 - nivo slider
@@ -215,18 +220,22 @@
 		 */
 		var filter;
 		var page;
+
 		function displayVals() {
-			var singleValues = $( "#single" ).val();
-			// When using jQuery 3:
-			// var multipleValues = $( "#multiple" ).val();
-			//$( "p" ).html( "<b>Single:</b> " + singleValues);
+
+			var urlParams = new URLSearchParams(window.location.search);
+			var id_page = urlParams.get("page");
+			var singleValues = jQuery( "#single" ).val();
+
+			page = id_page;
 			filter = singleValues;
+			console.log(filter);
 			var url = 'http://localhost:3333/list_animals'+'?page='+page+'&idloai='+filter;
 			$.ajax({
 				url: url,
 				method: "GET",
 				success: function(result){
-					console.log(result);
+					//console.log(result);
 					var list = result;
 					var content_html = '';
 					for (var i = 0; i < list.length; i++) {
@@ -234,10 +243,10 @@
 						content_html +=		'<div class="item col-lg-3" id="itemfil">';
 						content_html +=		'<div class="item-content">';
 						content_html +=		'<div class="pic">';
-						content_html +=		'<a href="introduce.html?id="'+list[i].id+'><img src="../'+list[i].pic+'" width="200"></a>';
+						content_html +=		'<a href="introduce.html?id='+list[i].id+'"><img src="../'+list[i].pic+'" width="200"></a>';
 						content_html +=		'</div>';
 						content_html +=		'<div class="title">';
-						content_html +=		'<p><a href="#" id="name">'+list[i].title+'</a></p>';
+						content_html +=		'<p><a href="introduce.html?id='+list[i].id+'" id="name">'+list[i].title+'</a></p>';
 						content_html +=		'</div>';
 						content_html +=			'<div class="clear">';
 						content_html +=			'</div>';
@@ -248,15 +257,14 @@
 				}
 			});
 		}
-
-		$( "select" ).change(displayVals );
+		$( "select" ).change(displayVals);
 		displayVals();
-		var url = 'http://localhost:3333/list_animals';
+		var url = 'http://localhost:3333/list_animals'+'?page='+page+'&idloai='+filter;
 		$.ajax({
 			url: url,
 			method: "GET",
 			success: function(result){
-				console.log(result);
+				//console.log(result);
 				var list = result;
 				var content_html = '';
 				for (var i = 0; i < list.length; i++) {
@@ -264,10 +272,10 @@
 					content_html +=		'<div class="item col-lg-3" id="itemfil">';
 					content_html +=		'<div class="item-content">';
 					content_html +=		'<div class="pic">';
-					content_html +=		'<a href="introduce.html?id="'+list[i].id+'><img src="../'+list[i].pic+'" width="200"></a>';
+					content_html +=		'<a href="introduce.html?id='+list[i].id+'"><img src="../'+list[i].pic+'" width="200"></a>';
 					content_html +=		'</div>';
 					content_html +=		'<div class="title">';
-					content_html +=		'<p><a href="introduce.html" id="name">'+list[i].title+'</a></p>';
+					content_html +=		'<p><a href="introduce.html?id='+list[i].id+'" id="name">'+list[i].title+'</a></p>';
 					content_html +=		'</div>';
 					content_html +=			'<div class="clear">';
 					content_html +=			'</div>';

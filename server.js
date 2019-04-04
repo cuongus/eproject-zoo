@@ -59,8 +59,8 @@ MongoClient.connect(url, function (err, db) {
         });
 
         app.get("/chi-tiet",function(req,res){
-            var ID = parseInt(req.query.id);
-            collection_1.findOne({ID: ID}).then(result=>{
+            var ID = req.query.id;
+            collection_1.findOne({id: ID}).then(result=>{
                 if(result) {
                     res.send(result);
                 } else {

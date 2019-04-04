@@ -23,6 +23,9 @@ ul li {
 }
 
 /* CSS SECTION 1 */
+.container_1{
+	width: 970px;
+}
 
 .section_1{
 	background-color: #fff;
@@ -125,6 +128,9 @@ ul li {
 	font-weight: 400;
 }
 /* CSS SECTION 2 */
+.container_2{
+	width: 970px;
+}
 .section_2{
 	padding-bottom: 50px;
 }
@@ -239,42 +245,55 @@ ul li {
 }
 
 /* CSS SECTION 5f */
-.section_5f{
+.section_5{
 	padding-top: 100px;
 }
-.container_5f{
+.container_5{
 	width: 1100px;
 }
-.C5f-top{
+.C5-top{
+	border-bottom: 1px solid #4e555b;
+}
+
+.C5top-left .sign-mail input{
+	font-size: 20px;
+	padding: 3px 10px;
+	border-radius: 20px;
+	width: 35%;
+}
+
+.C5top-left .sign-mail label{
+	font-size: 30px;
+	padding-left: 10px;
+	vertical-align: middle;
+	color: #4e555b;
+}
+
+.C5top-right ul li{
+	display: inline-table;
+	font-size: 30px;
+	padding: 0 20px;
+}
+.C5-top div{
+	padding: 10px 0;
+}
+
+.C5-mid{
 	padding: 20px 0;
 	border-bottom: 1px solid #4e555b;
-	border-top: 1px solid #4e555b;
-}
-.C5f-top ul{
-	margin: 0;
-}
-.C5ftop-2 ul li{
-	display: inline-table;
-	font-size: 20px;
-	box-sizing: border-box;
-	width: calc(100% / 4);
-	float: left;
-}
-.C5ftop-1{
 	font-size: 20px;
 	font-weight: 600;
 }
-.C5ftop-1 ul li{
+.C5-mid-content ul li{
 	display: inline-table;
-	padding: 0 10px;
+	padding: 0 20px;
 }
 
-.C5f-bot{
+.C5-bot{
 	padding: 20px 0;
 }
-.C5f-top ul li:hover{
+
+.section_5f li:hover a{
 	color: #ff5912;
-}
-.C5f-top ul li:hover a{
-	color: #ff5912;
+	font-style: italic;
 }
