@@ -141,10 +141,18 @@ h3{
 }
 .dia_chi{
 	margin-top: 37px;
-    color: blue;
+    color: black;
+}
+
+.far {
+	color: red;
+}
+
+.fas {
+	color: red;
 }
 .dia_chi a {
-	color: blue;
+	color: black;
 }
 .dia_chi a:hover{
 	color: red;
