@@ -137,7 +137,17 @@ h3{
 	padding-top: 66px;
     font-weight: 600;
     font-size: 40px;
-    color: red;
+    color: green;
+}
+.dia_chi{
+	margin-top: 37px;
+    color: blue;
+}
+.dia_chi a {
+	color: blue;
+}
+.dia_chi a:hover{
+	color: red;
 }
 .section_5{
 	padding-top: 100px;
