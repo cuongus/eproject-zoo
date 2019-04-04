@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    position: relative;
+    background-color: #fff;
+    background-image: url('../images/bg/bg_fade-secondary.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+li{
+    list-style-type: none;
+}
+
+.section a{
+    text-decoration: none;
+}
+.container{
+    width: 970px;
+}
+.clear{
+    clear: both;
+}
+/* CSS SECTION 1 */
+
+.section_1{
+    background-color: #fff;
+    background-image: url('../images/bg/bg_fade.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.header-bar{
+    background-image: url('../images/bg/head_back.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 25;
+}
+.header-bar .logo{
+    padding-right: 0;
+    text-align: right;
+}
+.header-bar .col-lg-10{
+    padding-left: 0;
+}
+.header-top{
+    width: 100%;
+    float: left;
+}
+.header-bot{
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 52%;
+    margin: 0;
+
+}
+.section_1 .container_1 .primary-menu{
+    padding-top: 90px;
+}
+.section_1 .container_1 .menu-dropdown{
+    display: none;
+}
+.section_1 .container_1 .menu-item{
+    margin: 0;
+    height: 39px;
+    float: left;
+    line-height: 39px;
+    font-size: 13.5pt;
+    text-transform: uppercase;
+    position: relative;
+}
+.menu-item-link{
+    color: #1b5670;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 0 20px;
+    height: 39px;
+    line-height: 39px;
+    position: relative;
+}
+.menu-dropdown{
+    display: none;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+.menu-item-drop{
+    height: auto;
+    float: none;
+    line-height: 20px;
+    font-size: 18px;
+    text-transform: none;
+    padding: 5px 0;
+}
+.menu-itemdrop-link{
+    color: #2aabd2;
+    float: none;
+    width: 175px;
+    white-space: nowrap;
+    line-height: 20px;
+    height: auto;
+    padding: 5px 15px;
+    position: static;
+    background-color: transparent;
+}
+.menu-item:hover{
+    background: #fff;
+    color: #3399ff;
+}
+.menu-item:hover .menu-item-link{
+    color: #3399ff;
+}
+.menu-item:hover .menu-dropdown{
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* CSS SECTION 2 */
+.section_2f{
+    padding-bottom: 50px;
+}
+.section_2f .theme-light.slider-wrapper {
+    background: unset;
+    padding: 0;
+}
+
+
+/*Section 2*/
+.card {
+    display: table-cell;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    transition: transform .90s;
+    background-color: white;
+    padding: 5%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 500px;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+#show_message1 {
+    font-size: 30px;
+    color: red;
+}
+#show_message2 {
+    font-size: 30px;
+    color: red;
+}
+#show_message3 {
+    font-size: 30px;
+    color: red;
+}
+.form-control{
+    border-radius: 10px;
+}
+
+.img-thumbnail{
+    border-radius: 10px;
+}
+
+
+
+/* Section 3 */
+.button {
+    margin-top: 50px;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    width: 250px;
+    height: 50px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+
+}
+.button:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.container_3{
+    text-align: center;
+}
+
+/* Section 4*/
+.container_4{
+    text-align: center;
+}
+
+.pay{
+    display: none;
+}
+.col {
+    display: inline-block;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    height: 500px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    margin: 15px;
+}
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    overflow-y: hidden;
+    transition: 1s;
+}
+
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+.info{
+    background-color: white;
+    height: auto;
+    position: relative;
+    top: 15%;
+    width: 500px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    color: black;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    background-image: url('../images/4.jpg');
+}
+
+.info .button{
+    width: 20%;
+}
+
+/* CSS SECTION 5 */
+.C5-top{
+    border-bottom: 1px solid #4e555b;
+}
+
+.C5top-left .sign-mail input{
+    font-size: 20px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    width: 35%;
+}
+
+.C5top-left .sign-mail label{
+    font-size: 30px;
+    padding-left: 10px;
+    vertical-align: middle;
+    color: #4e555b;
+}
+
+.C5top-right ul li{
+    display: inline-table;
+    font-size: 30px;
+    padding: 0 20px;
+}
+.C5-top div{
+    padding: 10px 0;
+}
+
+.C5-mid{
+    padding: 20px 0;
+    border-bottom: 1px solid #4e555b;
+    font-size: 20px;
+    font-weight: 600;
+}
+.C5-mid-content ul li{
+    display: inline-table;
+    padding: 0 20px;
+}
+
+.C5-bot{
+    padding: 20px 0;
+}
+.section_5f li:hover a{
+    color: #ff5912;
+    font-style: italic;
+}
+
+
